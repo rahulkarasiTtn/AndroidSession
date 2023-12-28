@@ -62,6 +62,10 @@ public class LoginFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 String userName = userNameEditText.getText().toString();
+                PasswordFragment nameUser = new PasswordFragment();
+                Bundle bundle = new Bundle();
+                bundle.putString("Name",userName);
+                nameUser.setArguments(bundle);
                 loginListener.onLoginSuccess(userName);
             }
         });

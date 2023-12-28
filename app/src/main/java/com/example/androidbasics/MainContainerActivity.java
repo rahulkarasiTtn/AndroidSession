@@ -21,7 +21,7 @@ public class MainContainerActivity extends AppCompatActivity implements LoginFra
     @Override
     public void onLoginSuccess(String username) {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragmentContainer,PasswordFragment.newInstance(username))
+                .replace(R.id.fragmentContainer,new PasswordFragment())
                 .addToBackStack(null)
                 .commit();
     }

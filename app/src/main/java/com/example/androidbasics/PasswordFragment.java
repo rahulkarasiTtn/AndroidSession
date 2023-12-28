@@ -27,19 +27,20 @@ public class PasswordFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public static PasswordFragment newInstance(String username) {
-        PasswordFragment fragment = new PasswordFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_USERNAME, username);
-        fragment.setArguments(args);
-        return fragment;
-    }
+//    public static PasswordFragment newInstance(String username) {
+//        PasswordFragment fragment = new PasswordFragment();
+//        Bundle args = new Bundle();
+//        args.putString(ARG_USERNAME, username);
+//        fragment.setArguments(args);
+//        return fragment;
+//    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            username = getArguments().getString(ARG_USERNAME);
+
+            username = getArguments().getString("Name");
         }
     }
 
