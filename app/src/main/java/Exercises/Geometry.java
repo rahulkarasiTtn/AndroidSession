@@ -9,6 +9,7 @@ public class Geometry  {
         shapes.add(new Cube(2));
         shapes.add(new Sphere(3));
         shapes.add(new Triangle(8,6,7,8));
+        shapes.add(new Cylinder(10,20));
         for (Shape f:shapes) {
             f.displayShapeName();
         }
