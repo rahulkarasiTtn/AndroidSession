@@ -6,6 +6,7 @@
     <string name="hello_username">Hello UserName</string>
     <string name="dummy_image">dummy image</string>
     <string name="password">Password</string>
+    <string name="goToVideo">Go to Video</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

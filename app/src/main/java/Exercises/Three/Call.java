@@ -24,10 +24,13 @@ public class Call {
         nameSet.add("Ishita");
         nameSet.add("Sohit");
         nameSet.add("Pankaj");
+        nameSet.add("Rahul");
 
         UpperCaseSetProcessor upperCaseSetProcessor = new UpperCaseSetProcessor();
         LowerCaseSetProcessor lowerCaseSetProcessor = new LowerCaseSetProcessor();
-        upperCaseSetProcessor.processSet(nameSet);
-        lowerCaseSetProcessor.processSet(nameSet);
+//        upperCaseSetProcessor.processSet(nameSet);
+//        lowerCaseSetProcessor.processSet(nameSet);
+        System.out.println(nameSet);
+        System.out.println(nameSet);
     }
 }

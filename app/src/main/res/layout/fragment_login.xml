@@ -55,5 +55,15 @@
             android:backgroundTint="@color/purple_500"
             android:layout_marginTop="8dp"
             />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/goToVideo"
+            android:text="@string/goToVideo"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginTop="8dp"
+            />
     </LinearLayout>
 </LinearLayout>

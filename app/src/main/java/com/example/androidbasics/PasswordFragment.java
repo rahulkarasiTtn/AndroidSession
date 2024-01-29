@@ -1,6 +1,7 @@
 package com.example.androidbasics;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,11 +12,11 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class PasswordFragment extends Fragment {
 
     private static final String ARG_USERNAME = "username";
-
     private String username;
     private PasswordFragment.callBackListener passwordListener;
 
@@ -27,20 +28,19 @@ public class PasswordFragment extends Fragment {
         // Required empty public constructor
     }
 
-//    public static PasswordFragment newInstance(String username) {
-//        PasswordFragment fragment = new PasswordFragment();
-//        Bundle args = new Bundle();
-//        args.putString(ARG_USERNAME, username);
-//        fragment.setArguments(args);
-//        return fragment;
-//    }
+    public static PasswordFragment newInstance(String username) {
+        PasswordFragment fragment = new PasswordFragment();
+        Bundle args = new Bundle();
+        args.putString(ARG_USERNAME, username);
+        fragment.setArguments(args);
+        return fragment;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-
-            username = getArguments().getString("Name");
+            username = getArguments().getString(ARG_USERNAME);
         }
     }
 
@@ -74,6 +74,11 @@ public class PasswordFragment extends Fragment {
                 if (password.length() >= 8) {
                     // Password is valid, perform desired action
                     errorView.setText("");
+                    Context context = getActivity();
+                    SharedPreferences sharedPref = context.getSharedPreferences("loginFile",Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPref.edit();
+                    editor.putString("password",password);
+                    editor.apply();
                     passwordListener.navigateToHome(username);
                 } else {
                     // Display an error message

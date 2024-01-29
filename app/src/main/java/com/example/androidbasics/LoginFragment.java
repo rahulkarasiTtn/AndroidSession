@@ -1,6 +1,7 @@
 package com.example.androidbasics;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -22,6 +23,7 @@ public class LoginFragment extends Fragment {
 
     public interface callBackListener {
         void onLoginSuccess(String username);
+        void goToVideoPlayer();
     }
 
     public LoginFragment() {
@@ -57,18 +59,28 @@ public class LoginFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
         EditText userNameEditText = view.findViewById(R.id.username);
         Button submitButton = view.findViewById(R.id.submitButton);
+        Button goToVideoBtn = view.findViewById(R.id.goToVideo);
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String userName = userNameEditText.getText().toString();
-                PasswordFragment nameUser = new PasswordFragment();
-                Bundle bundle = new Bundle();
-                bundle.putString("Name",userName);
-                nameUser.setArguments(bundle);
+                Context context = getActivity();
+                SharedPreferences sharedPref = context.getSharedPreferences("loginFile",Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPref.edit();
+                editor.putString("userName",userName);
+                editor.apply();
                 loginListener.onLoginSuccess(userName);
             }
         });
+
+        goToVideoBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                loginListener.goToVideoPlayer();
+            }
+        });
+
         return view;
     }
 }
