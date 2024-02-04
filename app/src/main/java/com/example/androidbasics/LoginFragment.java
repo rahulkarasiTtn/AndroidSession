@@ -59,7 +59,7 @@ public class LoginFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
         EditText userNameEditText = view.findViewById(R.id.username);
         Button submitButton = view.findViewById(R.id.submitButton);
-        Button goToVideoBtn = view.findViewById(R.id.goToVideo);
+//        Button goToVideoBtn = view.findViewById(R.id.goToVideo);
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,12 +74,12 @@ public class LoginFragment extends Fragment {
             }
         });
 
-        goToVideoBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                loginListener.goToVideoPlayer();
-            }
-        });
+//        goToVideoBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                loginListener.goToVideoPlayer();
+//            }
+//        });
 
         return view;
     }

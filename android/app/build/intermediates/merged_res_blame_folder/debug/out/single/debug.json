@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "com.androidnativebridge.app-merged_res-45:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.androidnativebridge.app-main-47:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.androidnativebridge.app-merged_res-45:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.androidnativebridge.app-main-47:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.androidnativebridge.app-merged_res-45:/drawable_rn_edit_text_material.xml.flat",
+        "source": "com.androidnativebridge.app-main-47:/drawable/rn_edit_text_material.xml"
+    },
+    {
+        "merged": "com.androidnativebridge.app-merged_res-45:/drawable_naruto.jpg.flat",
+        "source": "com.androidnativebridge.app-main-47:/drawable/naruto.jpg"
+    },
+    {
+        "merged": "com.androidnativebridge.app-merged_res-45:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.androidnativebridge.app-main-47:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.androidnativebridge.app-merged_res-45:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.androidnativebridge.app-main-47:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.androidnativebridge.app-merged_res-45:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.androidnativebridge.app-main-47:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.androidnativebridge.app-merged_res-45:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.androidnativebridge.app-main-47:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.androidnativebridge.app-merged_res-45:/drawable_thumpsdown.png.flat",
+        "source": "com.androidnativebridge.app-main-47:/drawable/thumpsdown.png"
+    },
+    {
+        "merged": "com.androidnativebridge.app-merged_res-45:/drawable_border.xml.flat",
+        "source": "com.androidnativebridge.app-main-47:/drawable/border.xml"
+    },
+    {
+        "merged": "com.androidnativebridge.app-merged_res-45:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.androidnativebridge.app-main-47:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.androidnativebridge.app-merged_res-45:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.androidnativebridge.app-main-47:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.androidnativebridge.app-merged_res-45:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.androidnativebridge.app-main-47:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.androidnativebridge.app-merged_res-45:/drawable_thumbsup.png.flat",
+        "source": "com.androidnativebridge.app-main-47:/drawable/thumbsup.png"
+    },
+    {
+        "merged": "com.androidnativebridge.app-merged_res-45:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.androidnativebridge.app-main-47:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.androidnativebridge.app-merged_res-45:/layout_activity_home.xml.flat",
+        "source": "com.androidnativebridge.app-main-47:/layout/activity_home.xml"
+    }
+]
