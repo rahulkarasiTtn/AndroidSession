@@ -40,12 +40,10 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-    implementation ("com.google.android.exoplayer:exoplayer-core:2.19.1")
-    implementation ("com.google.android.exoplayer:exoplayer-ui:2.19.1")
-    implementation ("com.google.android.exoplayer:exoplayer:2.19.1")
-    implementation ("com.google.android.exoplayer:exoplayer-dash:2.19.1")
-    implementation ("com.google.android.exoplayer:exoplayer-hls:2.19.1")
-    implementation ("com.google.android.exoplayer:exoplayer-smoothstreaming:2.19.1")
+    // glide
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+
+
 
 
 

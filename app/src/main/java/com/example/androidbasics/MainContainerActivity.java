@@ -46,15 +46,6 @@ public class MainContainerActivity extends AppCompatActivity implements LoginFra
     }
 
     @Override
-    public void goToVideoPlayer() {
-        // Replace LoginFragment with PasswordFragment and pass the username
-        getSupportFragmentManager().beginTransaction()
-                .replace(R.id.fragmentContainer, VideoPlayerFragment.newInstance())
-                .addToBackStack(null)
-                .commit();
-    }
-
-    @Override
     public void navigateToHome(String username) {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.fragmentContainer,HomeFragment.newInstance(username))

@@ -23,7 +23,6 @@ public class LoginFragment extends Fragment {
 
     public interface callBackListener {
         void onLoginSuccess(String username);
-        void goToVideoPlayer();
     }
 
     public LoginFragment() {
@@ -73,13 +72,6 @@ public class LoginFragment extends Fragment {
                 loginListener.onLoginSuccess(userName);
             }
         });
-
-//        goToVideoBtn.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                loginListener.goToVideoPlayer();
-//            }
-//        });
 
         return view;
     }
